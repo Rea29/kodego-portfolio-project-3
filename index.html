@@ -7,8 +7,8 @@
     <link rel="short cut icon" type="image" href="./images/logo.jpg" />
     <link rel="stylesheet" href="style.css" />
     <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -16,13 +16,26 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- or -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
   </head>
   <body>
     <div class="home-section">
-      <nav class="navbar navbar-expand-lg" id="navbar">
+      <nav
+        class="navbar sticky-top navbar-expand-lg"
+        style="background-color: #75b4e0"
+        id="navbar"
+      >
         <div class="container-fluid">
           <a class="navbar-brand" href="#" id="logo"
-            ><img src="./images/logo.jpg" alt="" width="30px" />Shanica<span
+            ><img src="./images/logo1.jpg" alt="" width="30px" />Shanica<span
               >Snack<span>House</span></span
             ></a
           >
@@ -49,65 +62,164 @@
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Burger</a>
+                <a class="nav-link" href="#menu">Menu</a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Items
+              <li class="nav-item">
+                <a class="nav-link" href="#offer">Offers</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <button type="button" class="btn">Login</button>
+                  <button type="button" class="btn">SignUp</button>
                 </a>
-                <ul
-                  class="dropdown-menu"
-                  aria-labelledby="navbarDropdown"
-                  style="background-color: #ffc00f"
-                >
-                  <li><a class="dropdown-item" href="#">Burger</a></li>
-                  <li><a class="dropdown-item" href="#">Nachos</a></li>
-                  <li><a class="dropdown-item" href="#">Shake</a></li>
-                  <li><a class="dropdown-item" href="#">Rice Meals</a></li>
-                </ul>
               </li>
             </ul>
-            <form class="d-flex">
+            <!-- <form class="d-flex">
               <div class="icons">
-                <i class="fa-regular fa-user"></i>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <a class="dropdown-item" href="#">
+                  <button type="button" class="btn btn-info">Login</button>
+                </a>
               </div>
-            </form>
+              <div class="icons">
+                <a class="dropdown-item" href="#">
+                  <button type="button" class="btn btn-success">SignUp</button>
+                </a>
+              </div>
+            </form> -->
           </div>
         </div>
       </nav>
-      <section class="home">
+      <section class="home" id="home">
         <div class="content">
           <h1>
-            Super Delicious <br />
-            <span>Burger</span>
+            Don't focus on <span>How much you EAT</span> focus on What you EAT
           </h1>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            Dignissimos qui reiciendis vero quisquam. Voluptatem, totam. Aperiam
-            doloribus excepturi numquam. Autem dolorum praesentium animi rem at
-            debitis architecto rerum accusantium tempore labore maiores ab,
-            iusto earum optio eius placeat omnis? Consequatur sit nulla corrupti
-            maxime error vel neque minus? Enim, inventore.
+            Welcome to Shanica Snack House, where delicious treats await! Our
+            cozy corner is filled with the aroma of freshly baked goodies and
+            the sound of sizzling snacks. Whether you're craving a burgers, a
+            milk shake, or a rice meals, we've got you covered. Sit back, relax,
+            and indulge in our scrumptious delights. At shanica Snack House,
+            every bite is a taste of happiness.
           </p>
-          <button id="btn">Order Now</button>
         </div>
         <div class="img">
-          <img src="./images/Burger.jpg" alt="" />
+          <img src="./images/finalburger-removebg-preview.png" alt="" />
         </div>
       </section>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="Menu" id="menu">
+      <h2 class="heading" id="menu"> OUR MENU</h2>
+      <br>
+      <div class="row  row-cols-1 row-cols-md-2 g-4" style="width: 50rem;">
+        <div class="col">
+          <div class="card card text-bg-primary mb-3" >
+            <img src="images/Burger.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Burgers</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4" style="width: 50rem;">
+        <div class="col">
+          <div class="card">
+            <img src="./images/miloblast.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4" style="width: 50rem;">
+        <div class="col">
+          <div class="card">
+            <img src="images/sisilog.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 g-4"style="width: 50rem;">
+        <div class="col">
+          <div class="card">
+            <img src="images/siomairice.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- <div class="card" style="width: 18rem">
+        <img src="./images/Burger.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="./images/miloblast.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img src="./images/siomairice.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content.
+              </p>
+            </div> -->
+    </section>
+    <div class="container" id="top icons">
+      <h1 class="heading" id="offer">Offers</h1>
+      <div class="row">
+        <div class="col-md-3 py-3 py-md-0" style="text-align: center">
+          <i class="bx bx-wifi" style="font-size: 10em"></i>
+          <h3>Free Wifi</h3>
+        </div>
+        <div class="col-md-3 py-3 py-md-0" style="text-align: center">
+          <i class="bx bx-wifi" style="font-size: 10em"></i>
+          <h3>Free Wifi</h3>
+        </div>
+        <div class="col-md-3 py-3 py-md-0" style="text-align: center">
+          <i class="bx bx-wifi" style="font-size: 10em"></i>
+          <h3>Free Wifi</h3>
+        </div>
+      </div>
+    </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
 
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
       crossorigin="anonymous"
     ></script>
   </body>
