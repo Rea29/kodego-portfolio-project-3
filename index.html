@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shanica Snack House</title>
+  <title>Shanica Online Store</title>
   <link rel="short cut icon" type="image" href="./images/logo.jpg" />
   <link rel="stylesheet" href="style.css" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet" />
@@ -16,177 +16,71 @@
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     /> -->
+  <style>
+    .img-center {
+      margin: auto;
+      /* width: 18rem; */
+    }
+
+    .cardRow {
+      /* height: 50%;
+      width: 50%; */
+      height: 80vh;
+    }
+
+    .colorBlue {
+      color: orangered
+    }
+  </style>
 </head>
 
 <body>
-  <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #75b4e0" id="navbar">
+  <nav class="navbar bg-body-tertiary ">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#" id="logo"><img src="./images/logo1.jpg" alt=""
-          width="30px" />Shanica<span>Snack<span>House</span></span></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span><i class="fa-solid fa-bars"></i></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <div class="btn-group" style="margin-top: 18px;">
-              <button class="btn btn-success btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Small button
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#burger">Burgers</a></li>
-                <li><a class="dropdown-item" href="#">Rice Meals</a></li>
-                <li><a class="dropdown-item" href="#"></a></li>
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Action</a></li>
-              </ul>
-
-            </div>
-          </li>
-          <li class="nav-item">
-
-            <a class="nav-link active" aria-current="page" href="#" id="first child">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#menu">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" style="color: rgb(188, 45, 23) !important;">
-              Login
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" style="color: rgb(188, 45, 23);">
-              Register
-            </a>
-          </li>
+      <a class="navbar-brand" href="#">
+        <img src="./images/logo1.jpg" alt="Logo" width="50" height="50">
+        Shanica Online Store
+      </a>
+    </div>
+  </nav>
 
 
-        </ul>
+  <div class="container">
+    <div class="row my-3 row-gap-3">
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <label for="categoryInput">Category</label>
+        <select class="form-select" id="categoryInput">
+          <option selected>None</option>
+        </select>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <label for="searchInput">Search</label>
+        <input class="form-control" type="text" placeholder="" id="searchInput" />
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3">
+
+        <button id="btnFilter" type="button" class="btn btn-primary mt-4" onclick="filterProduct()">Filter</button>
+      </div>
+
+
+    </div>
+
+  </div>
+  <div class="container mt-4">
+    <div class="shop-default shop-cards shop-tech">
+      <div class="row" id="CardRow">
+
 
       </div>
     </div>
-  </nav>
-  <div class="home-section">
-    <section class="home" id="home">
-      <div class="content">
-        <h1>
-          Don't focus on <span>How much you EAT</span> focus on What you EAT
-        </h1>
-        <p>
-          Welcome to Shanica Snack House, where delicious treats await! Our
-          cozy corner is filled with the aroma of freshly baked goodies and
-          the sound of sizzling snacks. Whether you're craving a burgers, a
-          milk shake, or a rice meals, we've got you covered. Sit back, relax,
-          and indulge in our scrumptious delights. At shanica Snack House,
-          every bite is a taste of happiness.
-        </p>
-      </div>
-      <div class="img">
-        <img src="./images/finalburger-removebg-preview.png" alt="" />
-      </div>
-    </section>
   </div>
-  <i id="menu"></i>
-  <br>
-  <br>
-  <br>
-  <br>
-  <section class="Menu" >
-    <h2 class="heading" > OUR MENU</h2>
-    <br>
-    <div class="container text-center">
-      <div class="row">
-
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img src="./images/burgers.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img src="./images/burgers.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img src="./images/burgers.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img src="./images/burgers.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img src="./images/burgers.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img src="./images/burgers.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-  
-  <br>
-  <br>
-
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
+  <footer class="text-center">
+    <div class="container">
+      <span class="text-muted">© 2024 Shanica online Shop</span>
+    </div>
+  </footer>
   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-  crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -194,10 +88,189 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"></script>
-    <script>
-    
-    </script>
-   
+
+
+
+
+
+
+  <script>
+    var products = [];
+    const categoryInput = document.querySelector("#categoryInput"); // gina kuha nya ang may id nga categoryInput kag gn declare as variable
+    const searchInput = document.querySelector("#searchInput");// gina kuha nya ang may id nga searchInput kag gn declare as variable
+    var categoryInputVal = "None";// for search selected category
+    var searchInputVal = ""; // for search input value
+    var limitInputVal = 0;
+    // Event Listeners ga hulat sang on change nga event sa may id nga categoryInput
+    categoryInput.addEventListener("change", (e) => {
+      categoryInputVal = e.target.value; // gina kuha nya ang value sang categoryInput nga id which is si dropdown category 
+      console.log(categoryInputVal);
+      // getProducts(limitInputVal,categoryInputVal,searchInputVal);
+    });
+    // Event Listeners ga hulat sang on change nga event sa may id nga searchInput
+    searchInput.addEventListener("keyup", (e) => {
+      // if (e.keyCode === 13) {
+
+      // getProducts(limitInputVal,categoryInputVal,searchInputVal);
+
+      // if ang total count letters sang search value  is > (greater than sign) 0 kuhaon nya ang value sang search then set value sang searchInputVal
+      if (e.target.value.length > 0) {// 
+        searchInputVal = e.target.value;  // gina kuha nya ang value sang searchInput nga id which is si search
+      }
+      // else if ang total count letters is not greater than 0 which is either equal or less than 0 e set searchInputVal equals to empty string
+      else {
+        searchInputVal = "";
+
+      }
+      // }
+    });
+
+    //function nga gina call kung e click si filter button
+    function filterProduct() {
+      // gina call ang function nga get products tapos gina pasahan sang value nga gina pang set mo sa mga event listeners sa babaw
+      getProducts(limitInputVal, categoryInputVal, searchInputVal);
+    }
+    function checkIfObjectPresent(inputArray, matchObj) {
+      const size = inputArray.length;
+
+      for (let i = 0; i < size; i++) {
+        let curr = inputArray[i];
+
+        if (JSON.stringify(curr) === JSON.stringify(matchObj)) {
+          return true;
+        }
+      }
+
+      return false;
+    }
+
+    //gn ubrahan ko function nga ma insert sya html code sa div nga may id CardRow
+    function fetchHtml(data) {
+      console.log(data);
+      $('#CardRow').empty();
+      //if data.total is not equal to undefined
+      if (typeof data.total != "undefined") {
+        //gina foreach nya ang mga array of objects to object lng para ma loop nga pa isa isa object ang gina fetch makita mo na sya sa console.log ang mga objects
+        data.products.forEach((element, index) => {
+          // si element amu na sya si product so kung array of objects sya products sya pero kung pa isa isa kuha product lng without S kay singular.
+          index += 1;
+          // html code nga gn set ko as string para ma read ni javascript 
+
+          var cardHtml = '<div class="col-md-4 mb-4 " >' +
+            '<div class="block product no-border z-depth-2-top z-depth-2--hover cardRow">' +
+            '<div class="block-image">' +
+            '   <a href="#">' +
+            '      <img src="' + element.thumbnail + '" class="img-center w-100" height="400">' +
+            ' </a>' +
+            ' <span class="product-ribbon product-ribbon-right product-ribbon--style-1 bg-blue text-uppercase">' + index + '</span>' +
+            '</div>' +
+            '<div class="block-body text-center">' +
+            ' <h3 class="heading heading-5 strong-600 text-capitalize ">' + element.title + '</h3>' +
+            '<div class="container text-center">' +
+
+            '<div class="row">' +
+
+            '    <div class="col">' +
+            '<h4 class="heading heading-1 text-capitalize colorBlue">&#8369;' + element.price + '</h4>' +
+            '   </div>' +
+            '    <div class="col">' +
+            ' <h4 class="heading heading-1 text-capitalize colorBlue">Stock: ' + element.stock + '</h4>' +
+            '   </div>' +
+            '</div>' +
+            '<div class="row">' +
+            '    <div class="col">' +
+            ' <span class=" text-capitalize colorBlue">Ratings: ' + element.rating + '</span>' +
+            '   </div>' +
+
+            '    <div class="col">' +
+            ' <span class=" text-capitalize colorBlue">' + element.category + '</span>' +
+            '   </div>' +
+            '    <div class="col">' +
+            ' <span class=" text-capitalize colorBlue">' + element.brand + '</span>' +
+            '   </div>' +
+
+            '</div>' +
+
+
+            '</div>' +
+
+            '<p class="product-description mt-4">' + element.description + '</p>' +
+
+            '</div>' +
+            '</div>' +
+            '</div>' +
+
+            '</div>';
+
+          console.log(cardHtml);
+          $('#CardRow').append(cardHtml);
+        });
+      }
+    }
+    async function getProducts(limit, category, search) {
+      products = [];
+      var productList = [];
+      let url = "https://dummyjson.com/products/"; // api endpoint
+
+      // if category is equal to none then set nya ang url to default
+      if (category == "None") {
+        url = "https://dummyjson.com/products/";
+      }
+      // else combine nya ang string ma add sya category bali gwa si example is https://dummyjson.com/products/furniture/
+      else {
+        if (typeof category != "undefined") {
+          url = url + "category/" + category + "/";
+        }
+
+      }
+
+      console.log(url);
+
+      const response = await fetch(url); // gina fetching palang diri si url enpoint
+      products = await response.json(); // once done gina kuha nya ang response which is si json and then gina set nya value sang variable nga array products to json response
+      productList = products; // gina set nya ang value sang productList variable to products 
+
+
+      if (!search == "") {
+        if (typeof search != "undefined") {
+          // gina filter products where gina lowercase nya ang search value para hindi mag sensitive ang string.
+          // then e return nya ang filtered products array
+          const filteredProducts = products.products.filter(obj => obj.title.toLowerCase().includes(search.toLowerCase()))
+          productList.products = filteredProducts;
+          console.log(productList);
+          // gina call nya ang function nga fetchHtml which is si function nga ga insert html sa div nga CardRow kag gina pasahan nya data which is productList
+          fetchHtml(productList);
+        }
+
+      } else {
+        //if wala search then e return nya ang original nga productList nga wala na filtered
+        fetchHtml(products);
+      }
+
+
+
+    };
+    //function nga mag api call nga get all categorys endpoint 
+    async function getCategories() {
+      var categories = [];
+      let url = "https://dummyjson.com/products/categories";
+
+
+      const response = await fetch(url);
+      categories = await response.json();
+      // inset html content which is ang option sa html nga select amu ni sya si dropdown gina insert nya sa dropdown ang mga value sang select 
+      // which is si categories
+      categories.forEach(element => {
+
+        var cardHtml = '<option value="' + element + '">' + element + '</option>';
+        $('#categoryInput').append(cardHtml);
+      });
+    };
+    getCategories(); // gina call nya ang function para ma run kung di ma call value hindi sya ma run ang functions same thing man ang sa dalom
+    getProducts();
+
+  </script>
+
 </body>
 
 </html>
